@@ -649,7 +649,7 @@ def run(name, prp_mask):
 
         # line_image = display_lines(gang, averaged_lines)
         # combo_image = cv2.addWeighted(gang, 0.75, line_image, 1, 1)
-
+        
         try:
             prp_mask.l_slope = np.mean([prp_mask.l_slope, calculate_line_slope(average_left)])
             prp_mask.r_slope = np.mean([prp_mask.r_slope, calculate_line_slope(average_right)])
